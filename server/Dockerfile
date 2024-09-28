@@ -1,19 +1,23 @@
-# Use Node.js image
-FROM node:18
+# Dockerfile for server
+FROM node:latest
 
-# Set working directory
+# Set the working directory
 WORKDIR /usr/src/app
 
-
-# Copy package.json and package-lock.json, then install dependencies
+# Copy package.json and package-lock.json
 COPY package.json package-lock.json ./
+
+# Install dependencies
 RUN npm install
 
-# Copy the rest of the source code
+# Install nodemon globally
+RUN npm install -g nodemon
+
+# Copy the rest of the application code
 COPY . .
 
-# Expose the backend port
+# Expose the port the app runs on
 EXPOSE 4000
 
-# Use nodemon to watch for file changes and auto-restart
-CMD ["npm", "run", "dev"]
+# Command to run the application
+CMD ["nodemon", "server.js"]

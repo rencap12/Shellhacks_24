@@ -1,21 +1,18 @@
-version: '3'
 services:
   client:
     build:
       context: ./client
+    command: npm run dev
     ports:
       - "3000:3000"
     volumes:
       - ./client:/usr/src/app
-      - /usr/src/app/node_modules
-    environment:
-      - CHOKIDAR_USEPOLLING=true
 
   server:
     build:
       context: ./server
+    command: nodemon server.js
     ports:
       - "4000:4000"
     volumes:
       - ./server:/usr/src/app
-      - /usr/src/app/node_modules

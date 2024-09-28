@@ -1,5 +1,5 @@
 # Use a Node.js image
-FROM node:18
+FROM node:latest
 
 # Set working directory
 WORKDIR /usr/src/app
@@ -7,7 +7,11 @@ WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json, then install dependencies
 COPY package.json package-lock.json ./
-RUN npm install
+
+
+RUN npm install --ignore-optional
+# RUN npm install --ignore-scripts
+
 
 # Copy the rest of the app's source code
 COPY . .
@@ -16,4 +20,4 @@ COPY . .
 EXPOSE 3000
 
 # Start Vite's dev server with hot reloading
-CMD ["yarn", "run", "dev", "--host"]
+CMD ["npm", "run", "dev"]

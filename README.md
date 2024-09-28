@@ -45,7 +45,7 @@ Go to http://localhost:3000. You should see the frontend connected to the backen
 
 
 ## Option 2: Use Docker
-Ensure docker is installed on your machine
+Ensure docker is installed and running on your machine
 
 From the root of your project (/Shellhacks_24), run in the terminal:
 ```bash
