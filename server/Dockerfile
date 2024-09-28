@@ -1,5 +1,5 @@
 # Dockerfile for Node.js API server
-FROM node:14
+FROM node:18
 
 WORKDIR /usr/src/app
 
