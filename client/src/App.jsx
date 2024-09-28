@@ -11,6 +11,8 @@ function App() {
 
   return (
     <div>
+      <h1>Hello World!</h1>
+      <h2>test for hot reloading</h2>
       <h1>{data ? data : 'Loading...'}</h1>
     </div>
   );

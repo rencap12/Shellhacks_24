@@ -1,12 +1,21 @@
 version: '3'
 services:
-  server:
-    build: ./server
-    ports:
-      - "4000:4000"
   client:
-    build: ./client
+    build:
+      context: ./client
     ports:
       - "3000:3000"
-    depends_on:
-      - server
+    volumes:
+      - ./client:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+
+  server:
+    build:
+      context: ./server
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./server:/usr/src/app
+      - /usr/src/app/node_modules
