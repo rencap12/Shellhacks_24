@@ -50,8 +50,6 @@ Go to http://localhost:3000. You should see the frontend connected to the backen
 ## Option 2: Use Docker
 Ensure Docker is installed and running on your machine
 
-Ensure you configured your OpenAI API key in the .env file in the server folder
-
 From the root of your project (/Shellhacks_24), run in the terminal:
 ```bash
 docker-compose up --build
