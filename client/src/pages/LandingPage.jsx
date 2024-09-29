@@ -23,6 +23,7 @@ const LandingPage = () => {
   return (
     <>
     <h1>{data ? data : 'Loading...'}</h1>
+    {/* <p>put forum</p> */}
     <StudyPlan />
     </>
   );

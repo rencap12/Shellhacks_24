@@ -1,5 +1,5 @@
 # Use a Node.js image
-FROM node:latest
+FROM node:latest AS builder
 
 # Set working directory
 WORKDIR /usr/src/app
@@ -9,7 +9,8 @@ WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
 
 
-RUN npm install --ignore-optional
+RUN npm install 
+#--save-dev @rollup/rollup-linux-x64-gnu
 # RUN npm install --ignore-scripts
 
 
