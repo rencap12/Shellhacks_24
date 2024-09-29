@@ -110,7 +110,7 @@ app.post('/api/study-plan', async (req, res) => {
 
 // GET endpoint for a test route
 app.get('/', (req, res) => {
-    res.json({ message: 'Hello World!' }); // Corrected to use json()
+    res.json({ message: 'Try it out!' }); // Corrected to use json()
     console.log('hello from initial');
 });
 
