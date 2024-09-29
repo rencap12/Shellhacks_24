@@ -1,8 +1,7 @@
-# Full Stack App with React, Node.js, and Docker
-# edit to include a database (supabase?) and or api
+# Resource RON
 
-## Overview
-This is a full-stack application using React for the frontend and Node.js for the backend. The app is fully Dockerized, making it easy to spin up in any environment.
+## Overview - Full Stack App with React, Node.js, OpenAI API, and Docker
+This is a full-stack application using React for the client and Node.js and OpenAI API for the backend. The app is fully Dockerized, making it easy to spin up in any environment.
 
 ## Technologies
 - **Frontend**: React (Vite)
