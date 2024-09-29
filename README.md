@@ -1,3 +1,11 @@
+**pending tasks:**
+- clean up UI
+- post onto devPost
+- integrate with Defang?
+- try using a styling framework? - tailwind
+- optimize
+
+
 # RPL - Research, Plan, Learn
 
 **Need help finding resources to level up your skillset? RPL provides insightful, educational resources based on a user's charactertics for any subject - Biology, Software, Linguistics, anything!**
