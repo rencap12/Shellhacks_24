@@ -8,7 +8,7 @@
 
 # RPL - Research, Plan, Learn
 
-**Need help finding resources to level up your skillset? RPL provides insightful, educational resources based on a user's charactertics for any subject - Biology, Software, Linguistics, anything!**
+**Need help finding resources to level up your skillset? RPL provides insightful, educational resources based on a user's charactertics for any subject - Biology, Software, anything!**
 
 ## Overview - Full Stack App with React, Node.js, OpenAI API, and Docker
 This is a full-stack application using React for the client with Node.js and OpenAI API for the backend. The app is fully Dockerized, making it easy to spin up in any environment.
