@@ -5,6 +5,8 @@
 - try using a styling framework? - tailwind
 - optimize
 
+https://youtu.be/3UFnxIUfanE
+
 
 # RPL - Research, Plan, Learn
 
