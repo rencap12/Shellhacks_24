@@ -9,7 +9,10 @@ function StudyPlan() {
         try {
             const response = await fetch('http://localhost:4000/api/study-plan', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer OPENAI_API_KEY`
+                 },
                 body: JSON.stringify({ studentInfo: { field: 'Computer Science' } }),
             });
 

@@ -28,6 +28,8 @@ cd server
 npm install
 npm start
 ```
+Can also use 'nodemon server.js'
+
 The backend will run on http://localhost:4000.
 
 

@@ -8,7 +8,7 @@ const LandingPage = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('http://localhost:4000/api');
+        const response = await fetch('http://localhost:4000');
         const json = await response.json(); // Await the json() method to get the parsed data
         console.log('message:', json.message);
         setData(json.message); // Access the message property from the JSON object
